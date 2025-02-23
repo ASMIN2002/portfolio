@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="last.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Rock Paper Scissors</h1>
+    <h2 style="color: greenyellow;">Play With Asmin</h2>
+    <h3>Choose One</h3>
+    <div class="choices">
+      <button class="choice" data-choice="rock">🪨 Rock</button>
+      <button class="choice" data-choice="paper">📄 Paper</button>
+      <button class="choice" data-choice="scissors">✂️ Scissors</button>
+    </div>
+    <div class="results">
+      <p id="user-choice">Your Choice: <span>-</span></p>
+      <p id="computer-choice">Asmin Choice: <span>-</span></p>
+      <p id="result">Result: <span>-</span></p>
+    </div>
+    <div class="stats">
+      <h2>Game Statistics</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Outcome</th>
+            <th>Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>You Win</td>
+            <td id="win-count">0</td>
+          </tr>
+          <tr>
+            <td>Asmin Wins</td>
+            <td id="loss-count">0</td>
+          </tr>
+          <tr>
+            <td>Draws</td>
+            <td id="draw-count">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <a href="index.html#games"><button id="back">Back</button></a>
+    <button id="reset-table-btn">Reset</button>
+  </div>
+  <script src="last.js"></script>
+</body>
+</html>

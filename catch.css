@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: black;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 0 10px white;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.instructions {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#puzzle-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px auto;
+  background: #ffffff1a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  background: #ffcc00;
+  color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 100px;
+}
+
+.empty {
+  background: #ffffff1a;
+  cursor: default;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #fff;
+  color: #6a11cb;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #6a11cb;
+  color: #fff;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .instructions {
+    font-size: 1em;
+  }
+
+  .tile {
+    height: 70px;
+    font-size: 1.2em;
+  }
+}
